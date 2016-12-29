@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "QuartzView.h"
 
 @interface ViewController ()
 
@@ -17,6 +18,10 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+
+    QuartzView *view = [[QuartzView alloc] initWithFrame:self.view.frame];
+    
+    [self.view addSubview:view];
 }
 
 

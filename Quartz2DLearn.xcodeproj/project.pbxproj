@@ -15,6 +15,7 @@
 		962B461D1E12455A00BB31FD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 962B461B1E12455A00BB31FD /* LaunchScreen.storyboard */; };
 		962B46281E12455A00BB31FD /* Quartz2DLearnTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 962B46271E12455A00BB31FD /* Quartz2DLearnTests.m */; };
 		962B46331E12455A00BB31FD /* Quartz2DLearnUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 962B46321E12455A00BB31FD /* Quartz2DLearnUITests.m */; };
+		962B46421E12457900BB31FD /* QuartzView.m in Sources */ = {isa = PBXBuildFile; fileRef = 962B46411E12457900BB31FD /* QuartzView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,8 @@
 		962B462E1E12455A00BB31FD /* Quartz2DLearnUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Quartz2DLearnUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		962B46321E12455A00BB31FD /* Quartz2DLearnUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Quartz2DLearnUITests.m; sourceTree = "<group>"; };
 		962B46341E12455A00BB31FD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		962B46401E12457900BB31FD /* QuartzView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QuartzView.h; sourceTree = "<group>"; };
+		962B46411E12457900BB31FD /* QuartzView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QuartzView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +108,8 @@
 				962B46111E12455A00BB31FD /* AppDelegate.m */,
 				962B46131E12455A00BB31FD /* ViewController.h */,
 				962B46141E12455A00BB31FD /* ViewController.m */,
+				962B46401E12457900BB31FD /* QuartzView.h */,
+				962B46411E12457900BB31FD /* QuartzView.m */,
 				962B46161E12455A00BB31FD /* Main.storyboard */,
 				962B46191E12455A00BB31FD /* Assets.xcassets */,
 				962B461B1E12455A00BB31FD /* LaunchScreen.storyboard */,
@@ -277,6 +282,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				962B46151E12455A00BB31FD /* ViewController.m in Sources */,
+				962B46421E12457900BB31FD /* QuartzView.m in Sources */,
 				962B46121E12455A00BB31FD /* AppDelegate.m in Sources */,
 				962B460F1E12455A00BB31FD /* main.m in Sources */,
 			);
