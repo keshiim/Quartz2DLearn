@@ -82,13 +82,15 @@
 //    CGContextDrawPath(context, kCGPathStroke);
     
     //图片
-//    CGContextRef context = UIGraphicsGetCurrentContext();
-//    CGRect imgRect = CGRectMake(20, 40, 90, 90);
-//    CGContextScaleCTM(context, 0.5, 0.5);
-//    CGContextTranslateCTM(context, imgRect.size.width + imgRect.origin.x * 2, imgRect.size.height + imgRect.origin.y * 2);
-//    
+    CGContextRef context = UIGraphicsGetCurrentContext();
+    CGRect imgRect = CGRectMake(0, 0, 90, 90);
+    CGContextSaveGState(context);
+    CGContextTranslateCTM(context, 0, 90);
+    CGContextScaleCTM(context, 1, -1);
+    
 //    CGContextRotateCTM(context, M_PI);
-//    CGContextDrawImage(context, imgRect, [UIImage imageNamed:@"quan"].CGImage);
+    CGContextDrawImage(context, imgRect, [UIImage imageNamed:@"quan"].CGImage);
+    CGContextRestoreGState(context);
     
     //Pattern着色样式
 //    CGContextRef context = UIGraphicsGetCurrentContext();
@@ -120,14 +122,14 @@
 //    CGGradientRelease(gradient);
     
     //CGGradient 径向渐变
-    CGContextRef context = UIGraphicsGetCurrentContext();
-    CGFloat components[] = {1,0,1,1, .3,.5,1,1.};
-    CGFloat locations[]  = {0.0, 1.0};
-    CGColorSpaceRef colorSpace = CGColorSpaceCreateWithName(kCGColorSpaceGenericRGB);
-    CGGradientRef gradient = CGGradientCreateWithColorComponents(colorSpace, components, locations, 2);
-    CGContextDrawRadialGradient(context, gradient, CGPointMake(320, 0), 20, CGPointMake(320, 400), 20, kCGGradientDrawsAfterEndLocation);
-    CGColorSpaceRelease(colorSpace);
-    CGGradientRelease(gradient);
+//    CGContextRef context = UIGraphicsGetCurrentContext();
+//    CGFloat components[] = {1,0,1,1, .3,.5,1,1.};
+//    CGFloat locations[]  = {0.0, 1.0};
+//    CGColorSpaceRef colorSpace = CGColorSpaceCreateWithName(kCGColorSpaceGenericRGB);
+//    CGGradientRef gradient = CGGradientCreateWithColorComponents(colorSpace, components, locations, 2);
+//    CGContextDrawRadialGradient(context, gradient, CGPointMake(320, 0), 20, CGPointMake(320, 400), 20, kCGGradientDrawsAfterEndLocation);
+//    CGColorSpaceRelease(colorSpace);
+//    CGGradientRelease(gradient);
 
     //CGShading 轴向渐变
 //    CGContextRef context = UIGraphicsGetCurrentContext();
